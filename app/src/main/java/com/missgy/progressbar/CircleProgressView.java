@@ -33,13 +33,14 @@ public class CircleProgressView extends View {
     private String currentText;
     private double progressNum = 0.5;
     private int defaultSize = dipToPx(100);//自定义View默认的宽高
-    private float barWidth=dipToPx(8);//圆弧进度条宽度
+
     private RectF mRectF;//绘制圆弧的矩形区域
 
     //自定义属性
     private int startColor;
     private int endColor;
-
+    private float barWidth=dipToPx(8);//圆弧进度条宽度
+    private String text="当前进度";//数字上面的文字
 
     public CircleProgressView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -51,6 +52,7 @@ public class CircleProgressView extends View {
         startColor= typedArray.getColor(R.styleable.ProgressBar_startColor,Color.YELLOW);
         endColor=typedArray.getColor(R.styleable.ProgressBar_endColor,Color.BLACK);
         barWidth= typedArray.getDimension(R.styleable.ProgressBar_barWidth,8);
+        text= typedArray.getString(R.styleable.ProgressBar_text);
         mRectF=new RectF();
         anim = new CircleAnim();
         //正方形画笔
@@ -128,7 +130,7 @@ public class CircleProgressView extends View {
         canvas.drawArc(mRectF, startAngle, currentAngle, false, progressPaint);//绘制进度条
         //绘制文字
         canvas.drawText(currentText, mRectF.centerX(), baseline+80, textPaint);
-        canvas.drawText("当前进度", mRectF.centerX(), baseline-130, textPaint2);
+        canvas.drawText(text, mRectF.centerX(), baseline-130, textPaint2);
 
     }
 

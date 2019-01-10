@@ -3,7 +3,8 @@
     <declare-styleable name="ProgressBar">
         <attr name="startColor" format="color" />
         <attr name="endColor" format="color" />
-        <attr name="barWidth" format="dimension">
+        <attr name="barWidth" format="dimension"/>
+        <attr name="text" format="string">
         </attr>
     </declare-styleable>
 </resources>
