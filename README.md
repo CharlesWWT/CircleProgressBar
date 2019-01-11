@@ -23,4 +23,4 @@
 |endColor|进度条结束的颜色|
 # 线型进度条
 ![error](https://github.com/MissGongYi/CircleProgressBar/blob/master/preview/show2.gif)
-逻辑都差不多，就没写自定义属性，数据都写死了,主要设计角度和弧度之间的转换
+逻辑都差不多，就没写自定义属性，数据都写死了,主要涉及到角度和弧度之间的转换
