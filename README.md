@@ -1,5 +1,5 @@
-![error](https://github.com/MissGongYi/CircleProgressBar/blob/master/show.gif)
-# how to use
+# 圆形进度条
+![error](https://github.com/MissGongYi/CircleProgressBar/blob/master/preview/show.gif)
 ## in xml
 ```
 <com.missgy.progressbar.CircleProgressView
@@ -21,3 +21,6 @@
 |barWidth|线宽|
 |startColor|进度条开始的颜色|
 |endColor|进度条结束的颜色|
+# 线型进度条
+![error](https://github.com/MissGongYi/CircleProgressBar/blob/master/preview/show2.gif)
+逻辑都差不多，就没写自定义属性，数据都写死了,主要设计角度和弧度之间的转换
