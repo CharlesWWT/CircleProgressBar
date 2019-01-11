@@ -5,13 +5,13 @@ import android.os.Bundle;
 
 
 public class MainActivity extends Activity {
-    private CircleProgressView circleProgress;
+    private CircleLineProgressView circleProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         circleProgress = findViewById(R.id.circleProgress);
-        circleProgress.setProgressNum(0.9,3000);
+        circleProgress.setProgressNum(0.8,3000);
     }
 }

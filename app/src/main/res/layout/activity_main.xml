@@ -7,13 +7,13 @@
     android:gravity="center"
     tools:context="com.missgy.progressbar.MainActivity">
 
-    <com.missgy.progressbar.CircleProgressView
+    <com.missgy.progressbar.CircleLineProgressView
         android:id="@+id/circleProgress"
         android:layout_width="250dp"
         android:layout_height="250dp"
         app:text="进行中"
         app:barWidth="23dp"
         app:endColor="#ff0000"
-        app:startColor="#00ff08" />
+        app:startColor="#ffaa00" />
 
 </LinearLayout>
